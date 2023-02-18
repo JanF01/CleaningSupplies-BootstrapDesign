@@ -1,0 +1,53 @@
+$header-bg-color: #1a1b1d;
+$header-text-color: #1a1b1d;
+
+header {
+  background-color: $header-bg-color;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 50px;
+  .na {
+    color: white;
+    font-size: 1.3em;
+    position: absolute;
+    top: 1.5em;
+    left: 2em;
+    font-family: Lora;
+    font-weight: 400;
+  }
+  .navbar-brand {
+    margin-left: 30px;
+    img {
+      max-height: 70px;
+    }
+  }
+
+  .nav-link {
+    background-color: $header-bg-color;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    transition: color 0.2s;
+
+    &:hover {
+      color: darken(rgb(148, 145, 145), 10%);
+    }
+  }
+
+  .navbar-toggler {
+    border-color: $header-text-color;
+    background-color: $header-text-color;
+    color: white;
+    .navbar-toggler-icon {
+      background-color: $header-text-color;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $header-text-color;
+    }
+  }
+}
